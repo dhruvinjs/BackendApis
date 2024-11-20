@@ -231,9 +231,11 @@ export const categoriesExp=asyncHandler(async (req,res) => {
             return res.status(200).json({category:category,Expenses:categoryExp})
 })
 
+
 export const apiDetails = asyncHandler(async (req, res) => {
-  c<h1>Welcome to the Expense Tracker API!</h1>
-    <p>Before you begin using the API, please read the <a href="https://github.com/dhruvinjs/BackendApis/blob/main/Expense_Tracker_API_User_Manual.md" target="_blank">API Documentation</a>. This documentation provides detailed information on how to use the API, including available endpoints, request/response examples, authentication, error handling, and more.</p>
+  const resp = `
+<h1>Welcome to the Expense Tracker API!</h1>
+    <p>Before you begin using the API, please read the <a href="https://your-repo-link-to-readme.md" target="_blank">API Documentation</a>. This documentation provides detailed information on how to use the API, including available endpoints, request/response examples, authentication, error handling, and more.</p>
 
     <h3>Key sections to review:</h3>
     <ul>
@@ -245,7 +247,6 @@ export const apiDetails = asyncHandler(async (req, res) => {
 
     <p>If you have any questions or need further assistance, please don’t hesitate to reach out.</p>
     <p>Happy coding!</p>
-  `;
   `;
   res.send(resp);
 });
