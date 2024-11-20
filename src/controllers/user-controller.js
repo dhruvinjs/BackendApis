@@ -232,11 +232,20 @@ export const categoriesExp=asyncHandler(async (req,res) => {
 })
 
 
-export const apiDetails=asyncHandler(async (req,res) => {
-  const resp="Hello User So first If U want to use this api please read this md file so You will get the whole idea wbout this api"
-  res.send(resp)
+ Welcome to the Expense Tracker API!
 
-})
+    Before you begin using the API, please read the [API Documentation](https://github.com/dhruvinjs/BackendApis/blob/main/Expense_Tracker_API_User_Manual.md). This documentation provides detailed information on how to use the API, including available endpoints, request/response examples, authentication, error handling, and more.
+
+    Here are the key sections to review:
+    - Authentication and Authorization
+    - Available API Endpoints
+    - Request and Response Examples
+    - Error Handling and Troubleshooting
+
+    If you have any questions or need further assistance, please don’t hesitate to reach out.
+
+    Happy coding!
+  `;
 
 export const viewAllCategories=asyncHandler(async (req,res) => {
   const user=await User.findById(req.user._id).select('-password')
