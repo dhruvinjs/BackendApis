@@ -225,8 +225,27 @@ export const categoriesExp=asyncHandler(async (req,res) => {
             throw new ApiError(404, "User not found");
           }
           const category=req.body || req.params.description
-
+          
           const categoryExp=await Expense.find(category)
           if(categoryExp.length===0) throw new ApiError(404,"Category Expenses not found")
             return res.status(200).json({category:category,Expenses:categoryExp})
+})
+
+
+export const apiDetails=asyncHandler(async (req,res) => {
+  const resp="Hello User So first If U want to use this api please read this md file so You will get the whole idea wbout this api"
+  res.send(resp)
+
+})
+
+export const viewAllCategories=asyncHandler(async (req,res) => {
+  const user=await User.findById(req.user._id).select('-password')
+  if (!user) {
+      throw new ApiError(404, "User not found");
+    }
+    const expenses=await Expense.find()
+    const allCat={...expenses,category:expenses.category}
+    res.status(200).json({
+      "Categories":allCat
+    })
 })
