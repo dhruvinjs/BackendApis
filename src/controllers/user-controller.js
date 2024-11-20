@@ -235,15 +235,9 @@ export const apiDetails = asyncHandler(async (req, res) => {
   const resp = `
     Welcome to the Expense Tracker API!
 
-    Before you begin using the API, please read the [API Documentation](https://your-repo-link-to-readme.md). This documentation provides detailed information on how to use the API, including available endpoints, request/response examples, authentication, error handling, and more.
+    To get started, please read the [API Documentation](https://github.com/dhruvinjs/BackendApis/blob/main/Expense_Tracker_API_User_Manual.md). This documentation will provide you with all the necessary information about how to use the API, available endpoints, authentication methods, and more.
 
-    Here are the key sections to review:
-    - Authentication and Authorization
-    - Available API Endpoints
-    - Request and Response Examples
-    - Error Handling and Troubleshooting
-
-    If you have any questions or need further assistance, please don’t hesitate to reach out.
+    If you have any questions or need further assistance, please don't hesitate to contact us.
 
     Happy coding!
   `;
