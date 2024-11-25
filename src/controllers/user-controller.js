@@ -234,21 +234,21 @@ export const categoriesExp=asyncHandler(async (req,res) => {
 
 export const apiDetails = asyncHandler(async (req, res) => {
   const resp = `
-<h1>Welcome to the Expense Tracker API!</h1>
-    <p>Before you begin using the API, please read the <a href="https://github.com/dhruvinjs/BackendApis/blob/main/Expense_Tracker_API_User_Manual.md" target="_blank">API Documentation</a>. This documentation provides detailed information on how to use the API, including available endpoints, request/response examples, authentication, error handling, and more.</p>
-
-    <h3>Key sections to review:</h3>
-    <ul>
-      <li>Authentication and Authorization</li>
-      <li>Available API Endpoints</li>
-      <li>Request and Response Examples</li>
-      <li>Error Handling and Troubleshooting</li>
-    </ul>
-
-    <p>If you have any questions or need further assistance, please don’t hesitate to reach out.</p>
-    <p>Happy coding!</p>
-  `;
-  res.send(resp);
+const resp = `
+  <h1>Welcome to the Expense Tracker API!</h1>
+  <p>To get started with using this API, please visit our <a href="https://github.com/dhruvinjs/ExpenseTrackerApi" target="_blank" rel="noopener noreferrer">GitHub Repository</a>.</p>
+  <p>In the repository, you'll find the README file, which contains detailed instructions on how to use the API effectively. It includes:</p>
+  <ul>
+    <li>Steps for Authentication and Authorization</li>
+    <li>Descriptions of Available API Endpoints</li>
+    <li>Request and Response Examples</li>
+    <li>Guidelines for Error Handling and Troubleshooting</li>
+  </ul>
+  <p>Make sure to review the README to understand all the features and functionality of the API.</p>
+  <p>If you have any questions or need further assistance, please don’t hesitate to reach out.</p>
+  <p>Happy coding!</p>
+`;
+res.send(resp);
 });
 
 export const viewAllCategories=asyncHandler(async (req,res) => {
