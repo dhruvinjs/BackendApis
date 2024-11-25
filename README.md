@@ -1,6 +1,6 @@
 
 # Expense Tracker API - User Manual
-Basic idea taken from the: https://roadmap.sh/projects/expense-tracker-api
+Project idea taken from the: https://roadmap.sh/projects/expense-tracker-api
 
 Welcome to the Expense Tracker API! This guide will help you understand how to use the features of this API effectively. Follow the steps below to get started.
 ---
