@@ -233,7 +233,6 @@ export const categoriesExp=asyncHandler(async (req,res) => {
 
 
 export const apiDetails = asyncHandler(async (req, res) => {
-  const resp = `
 const resp = `
   <h1>Welcome to the Expense Tracker API!</h1>
   <p>To get started with using this API, please visit our <a href="https://github.com/dhruvinjs/ExpenseTrackerApi" target="_blank" rel="noopener noreferrer">GitHub Repository</a>.</p>
